@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Program.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bem vindo ao My Expenses!!"
+                    android:textAlignment="center"
+                    android:textColor="#3F51B5"
+                    android:textSize="24sp"
+                    android:layout_marginTop="70dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/txtView2"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Para ajudarmos a controlar seus gastos domesticos clique em uma das opções abaixo"
+                    android:textAlignment="center"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnCadastro"
+                    android:layout_width="264dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="72dp"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Fazer Cadastro"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:iconTint="@color/white" />
+
+                <Button
+                    android:id="@+id/btnExistsCadastro"
+                    android:layout_width="264dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="72dp"
+                    android:backgroundTint="#3F51B5"
+                    android:text="Ja tenho cadastro"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:iconTint="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

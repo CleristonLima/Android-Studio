@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Program.MinhasDespesas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agora Sim!! Vamos te ajudar a controlar seu dinheiro de forma com que você não fique endividado, com isso você pode preencher abaixo o que você pretende gastar esse mes"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/txtTitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Selecione o mes:"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/lstMes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ListView>
+
+            <EditText
+                android:id="@+id/edtRendaMensalTotal"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="R$ do mes"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/edtAno"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Ano"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnAdicionar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="-70dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Adicionar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:iconTint="@color/white" />
+
+            <TextView
+                android:id="@+id/selectedItemText"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/addedItemsList"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
